@@ -19,6 +19,7 @@
 body {
   font-family: "Montserrat", sans-serif;
   overflow-x: hidden;
+  width: 100%;
 }
 /* / css for all pages / */
 
@@ -36,14 +37,7 @@ body {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
 }
-.hero-section {
-  background-image: url("../src/images/hero/hero-img.webp");
-  width: 100%;
-  height: 115vh;
-  object-fit: cover;
-  background-size: cover;
-  background-position: center center;
-}
+
 
 .title-white {
   filter: brightness(0) invert(1);
@@ -51,7 +45,7 @@ body {
 
 .hero-cta::after {
   content: "";
-  width: inherit;
+  width: 100%;
   height: inherit;
   border: 1px solid rgba(255, 255, 255, 0.362);
   position: absolute;
@@ -62,23 +56,13 @@ body {
 
 .hero-cta:hover:after {
   content: "";
-  width: inherit;
+  width: 100%;
   height: inherit;
   border: 1px solid rgba(255, 255, 255);
   position: absolute;
   top: -0px;
   left: 0px;
   transition: all 0.4s;
-}
-
-
-.about-section {
-  background-image: url("../src/images/who-we-are/background.jpg");
-  object-fit: cover;
-  background-size: cover;
-  background-position: center center;
-  width: 100%;
-  height: 100%;
 }
 
 .card-item-div {
@@ -235,50 +219,8 @@ background-color: rgb(243, 240, 238);
   box-shadow: inset 2px 2px 8px 160px rgba(0, 0, 0, 0);
 }
 
-.item-0 {
-  width: 100%;
-  height: 100%;
-}
 
-.item-1 {
-  background-image: url("../src/images/features/bg2.jpg");
-  width: 100%;
-  height: 100%;
-}
 
-.item-2 {
-  background-image: url("../src/images/features/bg5.jpg");
-  width: 100%;
-  height: 100%;
-}
-
-.item-3 {
-  background-image: url("../src/images/features/bg3.jpg");
-  width: 100%;
-  height: 100%;
-}
-
-.item-4 {
-  background-image: url("../src/images/features/bg4.jpg");
-  width: 100%;
-  height: 100%;
-}
-
-.item-5 {
-  background-image: url("../src/images/features/bg6.jpg");
-  width: 100%;
-  height: 100%;
-}
-
-/* / end of grid ^^ / */
-.featured-cta {
-  background-image: url(../src/images/features/banner.jpg);
-  width: 100%;
-  height: 18rem;
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
 
 /* / choose us / */
 .choose-section {
@@ -311,10 +253,16 @@ background-color: rgb(243, 240, 238);
   left: -30px;
 }
 
+@media screen and (max-width: 480px) {
+  .login-banner{
+    margin-top: 200px;
+  } 
+}
 @media (max-width: 480px) {
   .video-div::before {
     height: 261px;
   }
+  
 }
 
 .choose-cta {
@@ -341,7 +289,7 @@ background-color: rgb(243, 240, 238);
   gap: 6px;
   height: 100%;
 }
-
+/* 
 #item-0 {
   height: 41rem;
   width: 100%;
@@ -352,7 +300,7 @@ background-color: rgb(243, 240, 238);
   grid-row-end: 3;
   grid-column-end: 3;
 
-  background-image: url("../src/images/gallery/img1.jpg");
+  background-image: url("../src/assets/gallery/img1.jpg");
   object-fit: cover;
   background-size: cover;
   background-repeat: no-repeat;
@@ -399,7 +347,7 @@ background-color: rgb(243, 240, 238);
   background-image: url("../src/images/gallery/img3.jpg");
   object-fit: cover;
   background-size: cover;
-  /* / background-position: 0 -13px; / */
+   background-position: 0 -13px; 
   background-repeat: no-repeat;
 }
 
@@ -414,9 +362,9 @@ background-color: rgb(243, 240, 238);
   background-image: url("../src/images/gallery/img4.jpg");
   object-fit: cover;
   background-size: cover;
-  /* / background-position: 0 -81px; / */
+  background-position: 0 -81px;  
   background-repeat: no-repeat;
-}
+} */
 
 
 .pricing-cta {
@@ -446,15 +394,15 @@ background-color: rgb(243, 240, 238);
 }
 
 /* / login / */
-.login-section {
-  background-image: url("../src/images/who-we-are/background.jpg");
+/* .login-section {
+  background-image: url("../src/assets/who-we-are/background.jpg");
   object-fit: cover;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
   height: 100%;
-}
+} */
 
 .login-banner {
   object-fit: cover;
@@ -462,12 +410,12 @@ background-color: rgb(243, 240, 238);
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
-  margin-top: 20px;
+  margin-top: 120px;
 }
 
 /* / classes page ----- / */
 
-.cycling-bg,
+/* .cycling-bg,
 .meditaion-bg,
 .mma-bg,
 .karate-bg,
@@ -482,7 +430,7 @@ background-color: rgb(243, 240, 238);
 }
 
 .cycling-bg {
-  background-image: url("../src/images/classes/cycling.jpg");
+  background-image: url("../src/assets/classes/cycling.jpg");
 }
 
 .meditaion-bg {
@@ -503,7 +451,7 @@ background-color: rgb(243, 240, 238);
 
 .workout-bg {
   background-image: url("../src/images/classes/mobileapps.png");
-}
+} */
 
 
 /* / blog page / */
@@ -744,6 +692,9 @@ p {
 .card:hover p {
   color: #f0f0f0;
 }
+.header-cs{
+  margin-top: 60px;
+}
 @media screen and (min-width: 768px) {
   section {
     padding: 0 2em;
@@ -763,3 +714,9 @@ p {
     max-width: 33.33%;
   }
 }
+
+/* @media (max-width: 760px) {
+  .navbtn {
+    display: block; 
+  }
+} */

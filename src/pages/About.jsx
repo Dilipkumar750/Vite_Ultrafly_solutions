@@ -2,12 +2,12 @@ import GirlRunning from "../assets/who-we-are/girl-run.png";
 import GirlRedBg from "../assets/who-we-are/girl-redbg.svg";
 import GirlWind from "../assets/who-we-are/wind.png";
 
-import MainButton from "./MainButton";
+import MainButton from "../Components/MainButton";
 import Img3 from "../assets/AboutPage/3.jpg";
 import Img4 from "../assets/AboutPage/4.jpg";
 import Target from "../assets/AboutPage/target.png";
 import Mountain from "../assets/AboutPage/mountain.png";
-import React,{ useEffect } from "react";
+import { useEffect } from "react";
 function About() {
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
@@ -26,7 +26,7 @@ function About() {
 </HelmetProvider> */}
       <section className="login-section">
         <div className="container page-padding">
-          <h1 className="text-blue-500 text-center text-3xl md:text-4xl font-bold pt-24 pb-12 ">
+          <h1 className="text-blue-500 text-center text-3xl md:text-4xl font-bold pt-2 pb-12 ">
           ABOUT ULTRAFLY SOLUTIONS
           </h1>
           <div className="grid md:grid-cols-3">

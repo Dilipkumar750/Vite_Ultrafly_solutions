@@ -1,11 +1,10 @@
-import React from 'react'
 
 function ContactUs() {
   return (
     <div>
       <section>
-        <div className="login-banner relative justify-center flex pt-44">
-          <h1 className="text-blue-500 absolute bottom-[25px] text-3xl md:text-4xl  font-bold px-4 text-center">
+        <div className="login-banner relative justify-center flex pt-10 max-[480px]:mt-[150px]">
+          <h1 className="text-blue-500 absolute bottom-[25px] text-3xl md:text-4xl  font-bold px-4 text-center pt-20   ">
             GET IN TOUCH WITH US
           </h1>
         </div>
@@ -136,7 +135,6 @@ function ContactUs() {
             src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7833.164218421207!2d76.97284489999997!3d10.99488190000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1719896679786!5m2!1sen!2sin"
             allowFullScreen=""
             loading="lazy"
-            samesite="Strict"
             title="Map Showing UltraFly Solutions Office Location"
             style={{ width: "100%", height: "45rem", border: "0px" }}
           ></iframe>

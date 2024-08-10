@@ -1,16 +1,15 @@
 import { Link } from "react-router-dom";
-import React from "react";
 import logo from "../assets/ultrafly/ultraflysolutionslog.png";
 
 function Footer() {
   return (
     <>
       <footer className="bg-white">
-        <div className="container page-padding py-[5rem] md:py-[10rem]">
+        <div className=" page-padding py-[5rem] md:py-[10rem]">
           {/* {/ footer div all /} */}
-          <div className="grid  md:grid-cols-4 gap-4 justify-center items-center md:justify-start md:items-start ">
+          <div className="grid  md:grid-cols-4 gap-2 justify-center items-center md:justify-start md:items-start ">
             {/* {/ logo side /} */}
-            <div className="flex flex-col gap-8 md:col-span-2 order-last md:order-none">
+            <div className="flex flex-col gap-6 md:col-span-2 order-last md:order-none">
               <img
                 src={logo}
                 alt="UltraFly Solutions - Your Partner in Digital Transformation"
@@ -21,7 +20,7 @@ function Footer() {
                 Upstairs), Coimbatore-641018
               </p>
               {/* {/ socials /} */}
-              <div className="flex gap-7 text-[18px] text-[#646464] min540:justify-center">
+              <div className="flex gap-5 flex-wrap text-[18px] text-[#646464] min540:justify-center">
                 <a
                   href="https://www.facebook.com/ultraflysolutions"
                   target="_blank"
